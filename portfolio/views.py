@@ -7,6 +7,9 @@ from .models import TodoItem, Project
 def home(request): 
     return render(request, "home.html")
 
+def about_me(request):
+    return render(request, "about_me.html")
+
 def todos(request):
     items = TodoItem.objects.all()
     return render(request, "todos.html", {"todos":items})
