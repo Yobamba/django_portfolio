@@ -1,18 +1,17 @@
+
+// Function to get values from the dom for filtering purposes
 function getSelectedFilters() {
     const language = document.getElementById('languages').value;
     const framework = document.getElementById('frameworks').value;
     const projectType = document.getElementById('projectType').value;
 
-    // You can perform further operations with these variables here
-    // For example, you can pass them to another function for filtering projects
+    
     filterProjects(language, framework, projectType);
 }
 
+// Function to filter through projects
 function filterProjects(language, framework, projectType) {
-    // Your filtering logic here
-    console.log("Selected language:", language);
-    console.log("Selected framework:", framework);
-    console.log("Selected project type:", projectType);
+    
 
     const projects = document.querySelectorAll('.proj');
 
@@ -36,6 +35,7 @@ function filterProjects(language, framework, projectType) {
 document.getElementById('languages').addEventListener('change', getSelectedFilters);
 document.getElementById('frameworks').addEventListener('change', getSelectedFilters);
 document.getElementById('projectType').addEventListener('change', getSelectedFilters);
+
 
 
 

@@ -235,19 +235,8 @@ Clear Progress Tracking: Mark tasks as completed or pending to gain a clear over
 
  
     <script>
-        function toggleDescription(descriptionId) {
-    const description = document.getElementById(descriptionId);
-    const button = document.querySelector('.read-more');
     
-    if (description && button) {
-        description.classList.toggle('expanded');
-        
-        // Change button text based on the state
-        const isExpanded = description.classList.contains('expanded');
-        button.textContent = isExpanded ? 'Read less' : 'Read more';
-    }
-}
-
+// function to open the page with details on the projects
 function openProjectDetailsPage(projectName) {
     window.open(`/project/${projectName}/`, '_blank');
 }
