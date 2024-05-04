@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/styles.css">
+
+    <title>Ednilson Bambo</title>
+</head>
+  <body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">My Django App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <div class="container">{% block content %} {% endblock %}</div>
+
+    <div class="header-nav">
+        <ul id="about_me">
+            <li><button onclick="window.location.href='mailto:ednilsoncastanheira53@gmail.com?subject=From the Website'">Contact</button></li>
+            <li>
+              <button onclick="window.location.href='/about_me.html'">About</button>
+          </li>
+        </ul>
+
+        <ul id="social-ul">
+            <a href="https://github.com/Yobamba" target="_blank"><li><img src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png" alt="github-icon" id="github-link"></li></a>
+            <a href="https://www.linkedin.com/in/ednilsonbambo/" target="_blank"><li><img src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png" alt="linkedin-icon" id="linkedin-li"></li></a>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" ></script> -->
+  </body>
+</html>

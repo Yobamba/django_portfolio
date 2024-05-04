@@ -1,0 +1,261 @@
+{% extends "base.html" %} {% block title %} Portfolio {% endblock %}
+{% block content %} 
+
+<body>
+    <div id="header-div">
+    <header style="background-image: url(../static/images/coding.jpg); height: 631px; background-position: 0px 0px;">
+    
+    <img src="../static/images/profile-pic.jpg" alt="eddie's image" id="eddie-pic">
+    <h1 id="eddie-h1">Ednilson Bambo</h1>
+    
+    <h2 id="junior-h2">Junior Backend Developer</h2>
+    <a href="../static/images/Ednilson_CV;.pdf" download="" class="btn btn-outline-primary" id="cv">Download CV</a>
+    <div id="overlay"></div>
+    </header>
+</div>
+    <div id="socials">
+        <div id="github">
+            <a href="https://github.com/Yobamba" target="_blank"><img src="https://d33wubrfki0l68.cloudfront.net/38469cf88d038b6ba3322c9fcb93a8f7167df4b9/cb0b9/assets/svg/github-dark.svg" alt="github-icon" class="icon"></a>
+        </div>
+
+        <div id="linkedin">
+            <a href="https://www.linkedin.com/in/ednilsonbambo/" target="_blank"><img src="https://d33wubrfki0l68.cloudfront.net/d8e6e1e636531e28274a1b8b6d947b817f6145bd/d42d3/assets/svg/linkedin-dark.svg" alt="github-icon" class="icon"></a>
+        </div>
+    </div>
+
+    <!-- Add filter options -->
+    <div id="filter-container">
+<div id="filters">
+    <label for="languages">Select programming languages:</label>
+    <select id="languages">
+        <option value=""></option>
+        <option value="proj">All</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <!-- Add more options for other languages -->
+    </select>
+
+    <label for="frameworks">Select frameworks:</label>
+    <select id="frameworks">
+        <option value=""></option>
+        <option value="proj">All</option>
+        <option value="React">React</option>
+        <option value="Node">Node</option>
+        <!-- Add more options for other frameworks -->
+    </select>
+
+    <label for="projectType">Select project type:</label>
+    <select id="projectType">
+        <option value=""></option>
+        <option value="proj">All</option>
+        <option value="backend">Backend</option>
+        <option value="frontend">Frontend</option>
+    </select>
+</div>
+
+</div>
+
+    <div id="projects-container">
+
+        <div id="to-do-div" class="proj React JavaScript frontend">
+            <h2><a href="https://to-do-list-manager-nu.vercel.app/" target="_blank">TO DO MANAGER</a></h2>
+            <div id="todo-flex" class="proj-flex">
+            <img src="../static/images/Task Manager.png" alt="screenshot of a website" class="screenshots">
+            <div class="description">
+                <p>To-Do List Manager is the ultimate task management solution designed for users seeking 
+                    simplicity and efficiency. Say goodbye to the complexities of task organization and
+                     hello to a streamlined, hassle-free experience. With its intuitive interface and 
+                     robust features, managing your to-do lists has never been easier</p>
+                <span class="hidden-content description" id="to-do-manager">
+                    <h3>Key features include:</h3>
+                    <p><strong>Effortless Task Management: </strong> Seamlessly add, edit, and delete tasks with a user-friendly interface that puts productivity at your fingertips.</p>
+                    <p><strong>Clear Progress Tracking: </strong>Mark tasks as completed or pending to gain a clear overview of your progress and priorities.</p>
+                    <p><strong>Intuitive Prioritization: </strong> Utilize drag-and-drop functionality to easily rearrange tasks and adapt to changing needs.</p>
+                    <p><strong>Secure Data Storage: </strong>Your to-do lists are stored securely using localStorage, ensuring privacy without the need for complex authentication methods.</p>
+
+                    <h3>Technology Used:</h3>
+                    <p><strong>React: </strong>Built with React, To-Do List Manager offers a modern and responsive user interface for an optimal task management experience.</p>
+                    <p><strong>JavaScript: </strong>Leveraging the power of JavaScript, To-Do List Manager delivers dynamic functionality and seamless interactions.</p>
+                    <p><strong>HTML/CSS: </strong>The application's layout and styling are crafted with HTML and CSS to provide a visually appealing and intuitive interface.</p>
+                    <p><strong>localStorage: </strong>Securely store user data directly on the device, eliminating the need for external servers and authentication processes.</p>
+                </span>
+                <button class="read-more btn" onclick="openProjectDetailsPage('to_do_manager')">Read more</button>
+            </div>
+        </div>
+        </div>
+
+        <div id="note_capture" class="proj Node JavaScript backend">
+            <h2><a href="https://note-capture.onrender.com/api-docs/#/" target="_blank">NOTE CAPTURE</a></h2>
+            <div class="proj-flex">
+            <img src="../static/images/notes_api_ss.png" alt="screenshot of a website" class="screenshots">
+            <div class="description">
+                <p>Crafted a robust and secure personal note-taking API, offering seamless CRUD operations
+                    for users. Leveraging MongoDB for data storage, Swagger for intuitive documentation and UI,
+                    and Supertest for thorough unit testing, the application ensures user privacy with strict 
+                    authentication and authorization controls. Elevate your note-taking experience with this 
+                    efficient and user-friendly solution.</p>
+                <span class="hidden-content description" id="note-capture-details">
+                    <h3>Key features include:</h3>
+                    <p><strong>Data Security: </strong> Utilizing MongoDB as the backend data storage solution, the Note Capture Project ensures the utmost security for your notes. Your data is stored in a robust and reliable database, safeguarding it from unauthorized access.</p>
+                    <p><strong>Intuitive Documentation and UI: </strong> Swagger is seamlessly integrated into the project, providing an intuitive and interactive documentation interface. Users can effortlessly explore and understand the API's functionalities, making the integration process smooth and developer-friendly.</p>
+                    <p><strong>Thorough Unit Testing with Supertest: </strong> Prioritizing the reliability of the API, Supertest is employed for thorough unit testing. This ensures that each component of the application functions as intended, contributing to a stable and error-free user experience.</p>
+                    <p><strong>Strict Authentication and Authorization Controls: </strong> User privacy is a top priority in the Note Capture Project. The application implements strict authentication and authorization controls, guaranteeing that only authorized users can access and manipulate their personal notes.</p>
+                    <p><strong>Elevated User Experience: </strong> The project is designed to elevate your note-taking experience. With a focus on efficiency and user-friendliness, users can perform CRUD operations seamlessly, enhancing their productivity and overall satisfaction.</p>
+                </span>
+                <button class="read-more btn" onclick="openProjectDetailsPage('note_capture')">Read more</button>
+            </div>
+        </div>
+        </div>
+        
+        
+        <!-- <div id="goal_tracker" class="proj">
+            <h2><a href="https://yobamba.github.io/wdd330-proj/" target="_blank">goal tracker</a></h2>
+            
+            <img src="../static/images/goal_tracker.png" alt="screenshot of a website" class="screenshots">
+            
+            <div class="description">
+                <p>Empower users to set, track, and achieve their goals with this intuitive web application. 
+                    Users can seamlessly create and manage their personal goals, visualize progress, and celebrate
+                    accomplishments. Leveraging local storage for data persistence, the app ensures a seamless 
+                    user experience.</p>
+                <span class="hidden-content description" id="goal-details">
+                    <h3>Key features include:</h3>
+                    <p><strong>Goal Creation</strong>: Users can effortlessly set goals using the user-friendly interface, specifying the goal name and type (simple or checklist).</p>
+                    <p><strong>Progress Tracking</strong>: The app provides a clear overview of in-progress and completed goals. Users can dynamically track progress with percentage indicators and set completion dates.</p>
+                    <p><strong>Interactive UI</strong>: The interactive user interface allows users to update goal progress, mark goals as completed, and delete goals, providing flexibility and control over their goal management.</p>
+                    <p><strong>Data Persistence</strong>: Utilizing local storage, the app securely stores user goals, ensuring data persistence across sessions and enhancing user experience.</p>
+                    <p><strong>Responsive Design</strong>: The application is designed with a responsive layout, offering a consistent and accessible experience across various devices.</p>
+                    <p><strong>Technologies Used</strong>: The app is built using HTML, CSS, and JavaScript, with dependencies on Chart.js for data visualization. The project is bundled and managed using Parcel for efficient development and deployment.</p>
+                </span>
+                <button class="read-more" onclick='toggleDescription("goal-details")'>Read more</button>
+
+            </div>
+            
+        </div> -->
+
+        <!-- <div id="sleep_outside">
+            <h2><a href="https://yobamba.github.io/sleepoutside-latam-afrika/" target="_blank">Camping Supply Project</a></h2>
+            <img src="../static/images/sleep_outside.png" alt="screenshot of a website" class="screenshots">
+        </div> -->
+
+        <div id="white_water_rafting" class="proj">
+            <h2><a href="https://quartz-separate-scarecrow.glitch.me/" target="_blank">WHITE WATER RAFTING</a></h2>
+            <div class="proj-flex">
+            <img src="../static/images/white_water_rafting.png" alt="screenshot of a website" class="screenshots">
+            <div class="description">
+                <p class="filler-p">
+                To-Do List Manager is the ultimate task management solution designed for users seeking simplicity and efficiency. Say goodbye to the complexities of task organization and hello to a streamlined, hassle-free experience. With its intuitive interface and robust features, managing your to-do lists has never been easier
+
+Key features include:
+Effortless Task Management: Seamlessly add, edit, and delete tasks with a user-friendly interface that puts productivity at your fingertips.
+
+Clear Progress Tracking: Mark tasks as completed or pending to gain a clear overview of your progress and priorities.
+</p>
+            </div>
+        </div>
+        </div>
+
+        <!-- <div id="frontend_dev" class="proj">
+            <h2><a href="https://yobamba.github.io/wdd230/" target="_blank">FRESHMEN FRONTEND</a></h2>
+            <div class="proj-flex">
+
+            <img src="../static/images/junior_frontend_dev.png" alt="screenshot of a website" class="screenshots">
+            <div class="description"><p class="filler-p">To-Do List Manager is the ultimate task management solution designed for users seeking simplicity and efficiency. Say goodbye to the complexities of task organization and hello to a streamlined, hassle-free experience. With its intuitive interface and robust features, managing your to-do lists has never been easier
+
+                Key features include:
+                Effortless Task Management: Seamlessly add, edit, and delete tasks with a user-friendly interface that puts productivity at your fingertips.
+                
+                Clear Progress Tracking: Mark tasks as completed or pending to gain a clear overview of your progress and priorities.</p></div>
+        </div>
+        </div> -->
+
+
+
+        <!-- <div id="nba_site">
+            <h2><a href="https://pewter-sneaky-wallaby.glitch.me/" target="_blank">NBA Site Project</a></h2>
+            <img src="../static/images/nba_page.png" alt="screenshot of a website" class="screenshots">
+        </div> -->
+
+        <!-- <div id="growth_mindset">
+            <h2><a href="https://spicy-ginger-moss.glitch.me/" target="_blank">Growth Mindset Project</a></h2>
+            <img src="../static/images/growth_mindset.png" alt="screenshot of a website" class="screenshots">
+        </div> -->
+
+
+        <!-- <div id="maid_service_2">
+            <h2><a href="https://perfect-like-xenon.glitch.me/" target="_blank">Maid Service Project</a></h2>
+            <img src="../static/images/maid_service_2.png" alt="screenshot of a website" class="screenshots">
+        </div> -->
+
+        <!-- <div id="tindog">
+            <h2><a href="https://deserted-pumped-atrociraptor.glitch.me/" target="_blank">Tindog Project</a></h2>
+            <img src="../static/images/tindog.png" alt="screenshot of a website" class="screenshots">
+        </div> -->
+
+        <!-- <div id="fake_google">
+            <h2><a href="https://blushing-orchid-attraction.glitch.me/" target="_blank">Fake Google Project</a></h2>
+            <img src="../static/images/fake_google.png" alt="screenshot of a website" class="screenshots">
+        </div> -->
+
+        
+
+
+        
+    </div>
+
+    <!-- <div id="about">
+       
+            <h2 id="bout-h2">About Me</h2>
+            <p>As a dynamic backend developer, I excel in Python and JavaScript, leveraging a rich skill set that spans JavaScript, ReactJS, Bootstrap, NodeJS, ExpressJS, MongoDB, PHP, HTML & CSS. My passion for problem-solving is evident in the programs I've written, the visually appealing websites I've designed, and the dynamic webpages developed in adherence to industry standards. Proficient in Agile methodologies like Scrum, I bring effective communication, teamwork, and multilingual fluency (Portuguese, English, Spanish) to enhance collaborative projects. Let's elevate your backend development with innovative and standards-compliant solutions.</p>
+    
+            <h3>Experience - Technologies:</h3>
+            <ul>
+                <li><p>JavaScript, ReactJS, Bootstrap.</p></li>
+                <li><p>NodeJS, ExpressJS, MongoDB.</p></li>
+                <li><p>PHP, HTML & CSS, Python.</p></li>
+                <li><p>Agile Development Methodology. </p></li>
+            </ul>
+    
+            <h3>Achievements:</h3>
+            <ul>
+                <li><p>Wrote programs to accomplish meaningful tasks in various domains.</p></li>
+                <li><p>Designed visually appealing and effective websites.</p></li>
+                <li><p>Developed dynamic webpages following industry standards and best practices.</p></li>
+            </ul>
+    
+            <h3>Contact:</h3>
+            <p>📞 +351 926 132 189</p>
+            <p>📧 ednilsoncastanheira53@gmail.com</p>
+        
+    </div> -->
+
+    
+
+    
+
+ 
+    <script>
+        function toggleDescription(descriptionId) {
+    const description = document.getElementById(descriptionId);
+    const button = document.querySelector('.read-more');
+    
+    if (description && button) {
+        description.classList.toggle('expanded');
+        
+        // Change button text based on the state
+        const isExpanded = description.classList.contains('expanded');
+        button.textContent = isExpanded ? 'Read less' : 'Read more';
+    }
+}
+
+function openProjectDetailsPage(projectName) {
+    window.open(`/project/${projectName}/`, '_blank');
+}
+
+    </script>
+
+<script src="../static/js/projects.js" defer></script>
+
+</body>
+</html>
+{% endblock %}
